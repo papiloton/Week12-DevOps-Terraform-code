@@ -17,3 +17,7 @@ data "aws_ami" "ami1" {
     values = ["hvm"]
   }
 }
+
+data "aws_instance" "ec21" {
+  instance_id = "i-0057ad8ceb494e32c"
+}

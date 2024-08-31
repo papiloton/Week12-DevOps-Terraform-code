@@ -1,7 +1,7 @@
 module "aws_key_pair" {
   source = "../key-pair"
   region_name = "us-east-1"
-  key_name = "ricardo-key"
+  key_name = "papiloton"
 }
 
 module "vpc" {
