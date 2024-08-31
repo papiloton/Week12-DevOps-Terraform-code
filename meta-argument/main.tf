@@ -22,13 +22,14 @@ resource "aws_iam_group" "gp1" {
 /*
 resource "aws_iam_user" "usr1" {
   name = "ricky2024"
+  depends_on = [aws_iam_group.gp1]
 }
 */
 
 
 
 resource "aws_instance" "server1" {
-    ami = "ami-0a699202e5027c10d"
+    ami = "ami-02c21308fed24a8ab"
   instance_type = "t3.small"
   key_name = "papiloton"
 }
